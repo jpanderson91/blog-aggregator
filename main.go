@@ -44,6 +44,7 @@ cmds.register("feeds", handlerFeeds)
 cmds.register("follow", middlewareLoggedIn(handlerFollow))
 cmds.register("following", middlewareLoggedIn(handlerFollowing))
 cmds.register("unfollow", middlewareLoggedIn(handlerUnfollow))
+cmds.register("browse", middlewareLoggedIn(handlerBrowse))
 //Check if len(os.Args) < 2 - if so, call log.Fatal with an error message
 //Extract the command name from os.Args[1]
 //Extract the arguments from os.Args[2:]
